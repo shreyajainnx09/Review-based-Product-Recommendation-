@@ -2,6 +2,10 @@
 
 > Tell it what you want — *"hydrating, lightweight and good value"* — and it recommends a skincare product and **explains why, using real sentences quoted from customer reviews.**
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1cJCMZcd2kLDey3cYP-rkb9SYmx41js-2)
+
+🔴 **Live notebook:** [Run it on Google Colab](https://colab.research.google.com/drive/1cJCMZcd2kLDey3cYP-rkb9SYmx41js-2): no setup needed.
+
 A classical-NLP pipeline (no LLMs, no generated text) built as the final project for **Natural Language and Responsive AI (TEE7022)**. Every explanation is extracted word-for-word from real Sephora reviews.
 
 ---
@@ -76,19 +80,27 @@ The notebook is built phase by phase, one NLP concept per phase:
 
 ## 🚀 Getting started
 
-### 1. Get the data
+### Quickest: run on Colab
+1. Open the **[live Colab notebook](https://colab.research.google.com/drive/1cJCMZcd2kLDey3cYP-rkb9SYmx41js-2)**
+2. **Runtime → Run all**
+3. Upload `product_info.csv` and `reviews_0-250.csv` when prompted (see dataset link below)
+4. Type your request in the Phase 13 live demo cell
+
+### Run locally
+
+#### 1. Get the data
 Download **[Sephora Products and Skincare Reviews](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews)** from Kaggle and place these next to the notebook:
 - `product_info.csv`
 - `reviews_0-250.csv`
 
 (In Colab the notebook will prompt you to upload them, or you can uncomment the `kagglehub` cell.)
 
-### 2. Install dependencies
+#### 2. Install dependencies
 ```bash
 pip install vaderSentiment simplemma textblob scikit-learn pandas nltk scipy
 ```
 
-### 3. Run
+#### 3. Run
 Open `ShreyaJain_NLP_finalproject.ipynb` in Jupyter or Google Colab and run all cells. Use the Phase 13 cell to try your own request:
 
 ```python
